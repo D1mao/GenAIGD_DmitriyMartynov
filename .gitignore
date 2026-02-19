@@ -1,4 +1,4 @@
-# Obsidian настройки (плагины, темы, workspace — не коммить!)
+# Obsidian настройки
 .obsidian/
 
 # OS мусор
@@ -9,6 +9,3 @@ Thumbs.db
 # Временные файлы
 *.tmp
 Untitled*
-
-# Git данные Obsidian (если используешь плагин Git)
-.obsidian-git-data/
