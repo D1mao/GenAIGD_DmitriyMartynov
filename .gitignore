@@ -1,11 +1,5 @@
-# Obsidian настройки
-.obsidian/
-
-# OS мусор
-.DS_Store
-Thumbs.db
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
 .trash/
-
-# Временные файлы
-*.tmp
-Untitled*
+.DS_Store
