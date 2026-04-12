@@ -640,3 +640,50 @@
 > **Avoid:** Спокойные выражения лиц; отсутствие сундука; чистый пол.
 > **UI overlay idea:** Шкала дракона почти заполнена, мигающая иконка микрофона и надпись «Тише!».
 
+
+## Промты для генерации:
+### Щаг 1: Базовый промпт образа персонажей
+
+**Контекст:**
+- Генерирую первые версии персонажа, пока нужен хотя бы стабильный общий образ, чтобы в дальнейшем только добавлять индивидуальности
+
+**Что пробовал:**
+- Первая версия первого варианта промпта:
+```
+Positive prompt:
+a green goblin thief, big ears, crooked smile, wearing patched rags, holding a rusty sack, standing in a dark cave, pixar style, bright expressive eyes, full body shot, fantasy illustration, soft lighting from glowing mushrooms
+     
+Negative prompt:
+realistic, photorealistic, horror, blood, muscles, armor, clean clothes, human proportions
+```
+- Вторая версия первого варианта промпта, уже больше признаков, более проработанная:
+```
+Positive prompt:
+full body shot of a cute clumsy green goblin thief, oversized pointy ears sticking out sideways, wide expressive eyes with a slightly guilty look, crooked mischievous smile, wearing patched and torn brown leather vest and shorts, holding a heavy gold coin in one hand and a frayed rope in the other, standing in a dark cave entrance with warm torchlight and faint golden glow from behind, pixar style, disney-esque, bright colors, soft shading, fantasy illustration, video game concept art, highly detailed, funny and lovable expression
+
+Negative prompt:
+realistic, photorealistic, hyperrealistic, horror, blood, gore, muscles, muscular, armor, clean clothes, elegant, serious, dark fantasy, ugly, scary, deformed, extra fingers, bad anatomy, blurry, low quality, human proportions, elf ears, long nose
+```
+**Вывод:**
+- Принимаю вторую версию, т.к. она более проработанная и результат уже более предсказуем
+- Далее нужно будет добить общий образ и начать индивидуализировать персонажей
+### Шаг 2. Работа с признаками
+
+**Контекст:**
+- Нужно поработать с признаками, чтобы базовый образ был более стабильным при генерациях, и убрать лишние детали
+
+**Что пробовали:**
+- Убрать описание того, что персонаж держит в руках, т.к. это отвлекает модель от основного образа и создаёт плохие артефакты
+- Убрать лишний свет
+- Поменять стиль-референс
+
+**Вывод:**
+- 1 вариант хорош, т.к. без него стало меньше странных деталей и кривых результатов
+- Изменение освещения особого результата не дало, хоть и кажется чуть более атмосферным
+- Стиль-референс pixar пока всё же показывает себя лучше всего, а попытка задать игровой стиль не дала результата
+- По итогу применю пока только 1 пункт
+- Итог positive prompt:
+```
+Positive prompt:
+full body shot of a cute clumsy green goblin thief, oversized pointy ears sticking out sideways, wide expressive eyes with a slightly guilty look, crooked mischievous smile, wearing patched and torn brown leather vest and shorts, standing in a dark cave entrance with warm torchlight and faint golden glow from behind, pixar style, disney-esque, bright colors, soft shading, fantasy illustration, video game concept art, highly detailed, funny and lovable expression
+```
